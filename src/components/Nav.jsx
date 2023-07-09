@@ -14,7 +14,7 @@ const Nav = () => {
                 <p className='logo'><Link to='/about'>About</Link></p>  
             </div>
             <div>
-                <p className='bag-icon'><Link to='/cart'><ShoppingBag/></Link></p>
+                <p className='icon'><Link to='/cart'><ShoppingBag/></Link></p>
             </div>
         </div>    
     )

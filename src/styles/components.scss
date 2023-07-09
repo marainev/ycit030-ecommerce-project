@@ -21,8 +21,8 @@ a {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     text-align: center;
     margin: 40px 0px;
-    color: #186369;
-    font-size: 2em;
+    color: #587a7c;
+    font-size: 1em;
 }
 .navbar-container{
   display: flex;
@@ -35,7 +35,7 @@ a {
 }
 .logo:hover{
     color: #1c3535;
-    font-size: 25px;
+    font-size: 20px;
 }
 .page-heading{
     text-align: center;
@@ -45,6 +45,10 @@ a {
 .page-heading h2{
     font-size: 40px;
     font-weight: 800;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.page-heading h6{
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -176,7 +180,7 @@ a {
     top: -25%;
     left: 25%;
 }
-.bag-icon{
+.icon{
     font-size: 30px;
     color: #4f4c4cec;
     cursor: pointer;
