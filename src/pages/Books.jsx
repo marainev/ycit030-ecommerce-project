@@ -15,7 +15,7 @@ const BookList = () => {
                 <li key={book.id}>
                     <Link to={`/books/${book.id}`}>
                         <div>
-                            <img src={book.image} alt={book.title}/>
+                            <img src={book.imageURL} alt={book.title}/>
                             <h2>{book.title}</h2> 
                             <p>{book.author}</p>
                         </div>
@@ -30,3 +30,4 @@ const BookList = () => {
 };
 
 export default BookList;
+

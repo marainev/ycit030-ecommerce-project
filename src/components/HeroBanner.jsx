@@ -6,7 +6,7 @@ const HeroBanner = () => {
     return (
         <div className='hero-banner-container'>
             <div>
-                <p className='tin-drum'></p>
+                <p className='orwell'></p>
             </div>
             <h2>George Orwell</h2>
             <h1>1984</h1>

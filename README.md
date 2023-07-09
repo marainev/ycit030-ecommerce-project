@@ -2,9 +2,9 @@
 
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
-#Site:
-[Sea Gato]
+Site:
+>[Sea Gato]
 
-# Contributors:
-[Luth Gallemaso](https://github.com/panzerwaschbar)
-[Maria Gallemaso](https://github.com/marainev)
+Contributors:
+>[Luth](https://github.com/panzerwaschbar)
+>[Maria](https://github.com/marainev)

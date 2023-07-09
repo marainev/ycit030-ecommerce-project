@@ -6,10 +6,12 @@ import { ShoppingBag } from 'phosphor-react';
 const Nav = () => {
     return (
         <div className='navbar-container'>
-            <div className='logo'>
-                <p><Link to='/'>Home</Link></p>
-                <p><Link to='/books'>Books</Link></p>
-                <p><Link to='/about'>About</Link></p>               
+            <div>
+                <p className='logo'><Link to='/'>Home</Link></p> 
+
+                <p className='logo'><Link to='/books'>Books</Link></p>
+
+                <p className='logo'><Link to='/about'>About</Link></p>  
             </div>
             <div>
                 <p className='bag-icon'><Link to='/cart'><ShoppingBag/></Link></p>
