@@ -1,5 +1,5 @@
 import React from 'react';
-import { InstagramLogo, TwitterLogo } from 'phosphor-react';
+import { FacebookLogo, InstagramLogo, TwitterLogo } from 'phosphor-react';
 
 const Footer = () => {
     return (
@@ -8,6 +8,7 @@ const Footer = () => {
                 <h6>&copy; 2023 Sea Gato</h6>
                 <p className='icons'>
                     <InstagramLogo/> &nbsp;
+                    <FacebookLogo/> &nbsp;
                     <TwitterLogo/>  
                 </p>
             </footer>

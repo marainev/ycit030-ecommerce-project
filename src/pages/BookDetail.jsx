@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { PlusCircle, MinusCircle } from 'phosphor-react'; 
 import Data from '../data/Data';
 import Footer from '../components/Footer';
+import '../styles/data.scss'
 
 const BookDetail = ({ addToCart }) => {
   const { id } = useParams();
@@ -30,10 +31,11 @@ const BookDetail = ({ addToCart }) => {
     <div className='page-heading'>
       {book ? (
         <div>
-          <h2>{book.title}</h2>
           
-          <img src={book.imageURL} alt={book.title} /> 
-          <p>{book.author}</p>
+          
+          <img src={book.imageURL} alt={book.title} className="book-image"/> 
+          <h2>{book.title}</h2>
+          <h3>{book.author}</h3>
           <p>{book.description}</p>
           <p>Price: ${book.price}</p>
 
