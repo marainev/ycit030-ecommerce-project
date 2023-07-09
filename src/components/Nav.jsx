@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import { ShoppingBag } from 'phosphor-react';
 
+
 const Nav = () => {
     return (
         <div className='navbar-container'>

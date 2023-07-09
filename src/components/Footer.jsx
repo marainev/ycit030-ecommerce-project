@@ -8,7 +8,7 @@ const Footer = () => {
                 <h6>&copy; 2023 Sea Gato</h6>
                 <p className='icons'>
                     <InstagramLogo/> &nbsp;
-                    <TwitterLogo/> &nbsp;   
+                    <TwitterLogo/>  
                 </p>
             </footer>
         </div>

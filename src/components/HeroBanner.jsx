@@ -6,22 +6,21 @@ const HeroBanner = () => {
     return (
         <div className='hero-banner-container'>
             <div>
-                <p className='tin-drum'>Günter Grass</p>
+                <p className='tin-drum'></p>
             </div>
-            <h3>Tin Drum</h3>
-            <h1>20%</h1>
+            <h2>George Orwell</h2>
+            <h1>1984</h1>
             <img src='' alt='book' 
             className='hero-banner-image'/>
 
             <div>
-            <Link to='/books/1003'>
+            <Link to='/books/1001'>
                 <button type='button'>
                     Shop Now
                 </button>
             </Link>
             <div className='desc'>
-                <h5>description</h5>
-                <p>description</p>
+                <p>A dystopian novel depicting a totalitarian regime.</p>
             </div>
             </div>
         </div>
