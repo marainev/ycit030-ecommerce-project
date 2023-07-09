@@ -3,8 +3,7 @@
 This project was created with [Create React App](https://github.com/facebook/create-react-app).
 
 Site:
->   [Sea Gato]
+[Sea Gato]
 
 Contributors:
-> - [Luth](https://github.com/panzerwaschbar) 
-> * [Maria](https://github.com/marainev)
+[Luth](https://github.com/panzerwaschbar) & [Maria](https://github.com/marainev)
