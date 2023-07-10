@@ -1,36 +1,88 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { PlusCircle, MinusCircle } from 'phosphor-react';
+import Data from '../data/Data';
 import '../styles/cart.scss';
-import '../styles/data.scss'
+import Footer from '../components/Footer';
 
-const Cart = ({ cartItems }) => {
-  const getTotalCost = () => {
-    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+const Cart = ({ cartItems, updateQuantity }) => {
+  const handleIncrement = (itemId) => {
+    const updatedQuantity = cartItems.find((item) => item.id === itemId).quantity + 1;
+    updateQuantity(itemId, updatedQuantity);
   };
 
+  const handleDecrement = (itemId) => {
+    const currentQuantity = cartItems.find((item) => item.id === itemId).quantity;
+    if (currentQuantity > 1) {
+      const updatedQuantity = currentQuantity - 1;
+      updateQuantity(itemId, updatedQuantity);
+    }
+  };
+
+  const getBookById = (id) => {
+    return Data.find((book) => book.id === id);
+  };
+
+  // Calculate total cost
+  const totalCost = cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
+  const taxAmount = totalCost * 0.05; // Assuming a 5% tax rate
+  const totalCostWithTax = totalCost + taxAmount;
+
   return (
-    <div className="cart-container">
+    <div className="page-heading">
       <h2>Cart</h2>
       {cartItems.length === 0 ? (
-        <p className='page-heading'>Your cart is empty.</p>
+        <p>Your cart is empty.</p>
       ) : (
         <>
           <ul className="cart-items">
-            {cartItems.map((item) => (
-              <li key={item.id}>
-                <div className="page-heading">
-                  <img src={item.imageURL} alt={item.title} className="book-image" />
-                  <div className="page-heading">
-                    <h3>{item.title}</h3>
-                    <p>Author: {item.author}</p>
-                    <p>Quantity: {item.quantity}</p>
-                    <p>Price: ${item.price}</p>
+            {cartItems.map((item) => {
+              const book = getBookById(item.id);
+              return (
+                <li key={item.id}>
+                  <div className="item-info">
+                    <img src={book.imageURL} alt={book.title} className="book-image" />
+                    <div className="item-details">
+                      <h3>{book.title}</h3>
+                      <p>Author: {book.author}</p>
+                      <p>Price: ${book.price}</p>
+                      <div className="quantity-controls">
+                        <button onClick={() => handleDecrement(item.id)}>
+                          <MinusCircle size={25} />
+                        </button>
+                        <span>{item.quantity}</span>
+                        <button onClick={() => handleIncrement(item.id)}>
+                          <PlusCircle size={25} />
+                        </button>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </li>
-            ))}
+                </li>
+              );
+            })}
           </ul>
           <div className="total-cost">
-            <p>Total Cost: ${getTotalCost()}</p>
+            <p>
+              <span className="bold">SubTotal Cost:</span>
+              <span className="bold">{`$${totalCost.toFixed(2)}`}</span>
+            </p>
+            <p>
+              <span className="bold">Tax (GST):</span>
+              <span className="bold">{`$${taxAmount.toFixed(2)}`}</span>
+            </p>
+            <p>
+              <span className="bold">Total Cost:</span>
+              <span className="bold">{`$${totalCostWithTax.toFixed(2)}`}</span>
+            </p>
+          </div>
+          <div className="cart-buttons">
+            <Link to="/books">
+              <button className="button-add-to-cart">Continue Shopping</button>
+            </Link>
+            <Link to="/checkout">
+              <button className="button-add-to-cart">Continue to Checkout</button>
+            </Link>
+            <Footer/>
           </div>
         </>
       )}

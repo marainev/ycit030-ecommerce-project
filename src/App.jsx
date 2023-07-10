@@ -26,18 +26,18 @@ function App() {
 
   return (
     <Router>
-      <div className='App'>
+      <div className="App">
         <Header />
-        <Nav />
+        <Nav cartItems={cartItems} />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/books' element={<Books />} />
-          <Route path='/books/:id' element={<BookDetail addToCart={addToCart} />} />
-          <Route path='/search' element={<SearchPage />} />
-          <Route path='/cart' element={<Cart cartItems={cartItems} />} />
-          <Route path='/checkout' element={<Checkout />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/contact' element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/books" element={<Books />} />
+          <Route path="/books/:id" element={<BookDetail addToCart={addToCart} />} />
+          <Route path="/search" element={<SearchPage />} />
+          <Route path="/cart" element={<Cart cartItems={cartItems} />} />
+          <Route path="/checkout" element={<Checkout />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
     </Router>

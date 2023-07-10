@@ -39,7 +39,7 @@ const BookDetail = ({ addToCart }) => {
           <p>{book.description}</p>
           <p>Price: ${book.price}</p>
 
-          <div>
+          <div className="quantity-controls-bookdetail">
             <button onClick={handleDecrement}>
               <MinusCircle size={24} />
             </button>
@@ -48,8 +48,14 @@ const BookDetail = ({ addToCart }) => {
               <PlusCircle size={24} />
             </button>
           </div>
-          <button onClick={handleAddToCart}>Add to Cart</button>
-          <Link to="/books">Back to Books</Link>
+
+          <button className="button-add-to-cart" onClick={handleAddToCart}>
+            Add to Cart
+          </button>
+
+          <Link className="link-back-to-books" to="/books">
+            Back to Books
+          </Link>
         </div>
       ) : (
         <div>Book not found</div>
