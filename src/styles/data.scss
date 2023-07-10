@@ -1,6 +1,26 @@
+.book-view{
+    text-align: center;
+    margin: 40px 0px;
+    color: #324d67;
+}
+.book-view h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.book-view p{
+    font-size: 16px;
+    font-weight: 200;
+    padding-bottom: 20px;
+}
 .book-image {
-    width: 400px; /* Set your desired width here */
+    width: 370px; /* Set your desired width here */
     height: 500px; /* Set your desired height here */
     object-fit: fill; /* This property ensures the image fills the specified dimensions without distorting its aspect ratio */
 }
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  
   
