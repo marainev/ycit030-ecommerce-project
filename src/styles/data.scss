@@ -2,55 +2,55 @@
     text-align: center;
     margin: 40px 0px;
     color: #324d67;
-  }
+}
   
-  .book-view h2 {
+.book-view h2 {
     font-size: 20px;
     font-weight: 600;
-  }
+}
   
-  .book-view p {
+.book-view p {
     font-size: 16px;
     font-weight: 200;
     padding-bottom: 20px;
-  }
+}
   
-  .book-image {
+.book-image {
     width: 370px;
     height: 500px;
     object-fit: fill;
-  }
+}
   
-  ul {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-  }
+}
   
-  .quantity-controls-bookdetail {
+.quantity-controls-bookdetail {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
-  }
+}
   
-  .quantity-controls-bookdetail button {
+.quantity-controls-bookdetail button {
     margin: 0 5px;
     border: none;
     background: none;
     cursor: pointer;
     outline: none;
-  }
+}
   
-  .quantity-controls-bookdetail button:focus-visible {
+.quantity-controls-bookdetail button:focus-visible {
     outline: solid #000;
-  }
+}
   
-  .quantity-controls-bookdetail button:active {
+.quantity-controls-bookdetail button:active {
     transform: scale(0.9);
-  }
+}
   
-  .button-add-to-cart {
+.button-add-to-cart {
     border: none;
     background: none;
     cursor: pointer;
@@ -58,26 +58,26 @@
     font-size: 16px;
     font-weight: bold;
     color:#405f6a
-  }
+}
   
-  .button-add-to-cart:focus-visible {
+.button-add-to-cart:focus-visible {
     outline: solid #092452;
-  }
+}
   
-  .button-add-to-cart:active {
+.button-add-to-cart:active {
     transform: scale(0.9);
-  }
+}
   
-  .link-back-to-books {
+.link-back-to-books {
     display: block;
     margin-top: 60px;
-  }
+}
   
-  .link-back-to-books a {
+.link-back-to-books a {
     text-decoration: underline;
-  }
+}
   
-  .link-back-to-books a:hover {
+.link-back-to-books a:hover {
     color: #1c3535;
-  }
+}
   

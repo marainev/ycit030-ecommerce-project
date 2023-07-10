@@ -4,7 +4,9 @@ const Contact = () => {
     return (
         <div className='page-heading'>
             <div>
-                <h2>Contact</h2>
+                <h2>Contact</h2> 
+            </div>
+            <div className='page-heading'>
                 <p>
                     <strong>address:</strong> 888 Vltavaska, Prague 1, 110 00, Czech Republic 
                 </p>
@@ -15,7 +17,6 @@ const Contact = () => {
                     <strong>email:</strong> seagato@example.com
                 </p>
             </div>
-
         </div>
     )
 };

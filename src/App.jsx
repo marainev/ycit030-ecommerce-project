@@ -36,6 +36,11 @@ function App() {
     setCartItems((prevItems) => [...prevItems, newItem]);
   };
 
+
+  const clearCart = () => {
+    setCartItems([]);
+  };
+
   return (
     <Router>
       <div className='App'>
@@ -46,11 +51,11 @@ function App() {
           <Route path='/books' element={<Books />} />
           <Route path='/books/:id' element={<BookDetail addToCart={addToCart} />} />
           <Route path='/search' element={<SearchPage />} />
-          <Route path='/cart' element={<Cart cartItems={cartItems} updateQuantity={updateQuantity} />} />
+          <Route path='/cart' element={<Cart cartItems={cartItems} updateQuantity={updateQuantity } />} />
           <Route path='/checkout' element={<Checkout />} />
           <Route path='/about' element={<About />} />
           <Route path='/contact' element={<Contact />} />
-          <Route path='/payment-success' element={<PaymentSuccess />} />
+          <Route path='/payment-success' element={<PaymentSuccess clearCart={clearCart}/>} />
         </Routes>
       </div>
     </Router>

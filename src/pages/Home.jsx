@@ -2,11 +2,15 @@ import React from 'react';
 import Data from '../data/Data';
 import HeroBanner from '../components/HeroBanner';
 import Footer from '../components/Footer';
+import '../styles/components.scss'
 
 const Home = () => {
   return (
     <div>
-      <HeroBanner />
+        <div className="banner-containers">
+            <HeroBanner />
+        </div>
+      
 
       <div className="page-heading">
         <h2>Best Sellers</h2>
