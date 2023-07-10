@@ -5,15 +5,15 @@ const Footer = () => {
     return (
         <div className='footer-container'>
             <footer className='page-heading'>
-                <h6>&copy; 2023 Sea Gato</h6>
-                <p className='icons'>
+                <h6>&copy; sputnik</h6>
+                <p className='footer-icons'>
                     <InstagramLogo/>
                     <FacebookLogo/> 
                     <TwitterLogo/>  
                 </p>
             </footer>
         </div>
-    )
+    );
 };
 
 export default Footer;
