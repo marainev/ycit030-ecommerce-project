@@ -77,7 +77,7 @@ const Data = [
       author: "Ursula K. Le Guin",
       description: "A groundbreaking exploration of gender and sexuality on an alien planet.",
       price: 10.99,
-      imageURL: "https://example.com/left-hand-of-darkness.jpg"
+      imageURL: "https://m.media-amazon.com/images/I/41Fvm5SggCL._AC_UF1000,1000_QL80_.jpg"
     },
     {
       id: 1011,
