@@ -21,7 +21,6 @@ const SearchPage = () => {
   };
 
   const handleAddToCart = (bookId) => {
-    // Handle adding book to cart
   };
 
   return (
@@ -57,9 +56,11 @@ const SearchPage = () => {
         </ul>
       ) : showNoResults && (
         <div className='page-heading'>
-          <p>Sorry, we couldn't find the book you're looking for.</p>
-          <p>It seems to have vanished into a temporal anomaly.</p>
-          <FlyingSaucer size={64} />
+            <p>Sorry, we couldn't find the book you're looking for.</p>
+            <p>It seems to have vanished into a temporal anomaly.</p>
+            <div>
+                <FlyingSaucer size={64} /> 
+            </div>
         </div>
       )}
       <Footer />
