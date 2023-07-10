@@ -19,7 +19,10 @@ const HeroBanner = () => {
 
         <div className='hero-banner-container orwell-container'>
             <div className='eye-icon'>
-                <Eye size={200} />
+                <Eye size={80} />
+                <Eye size={80} />
+                <Eye size={80} />
+                <Eye size={80} />
             </div>
             <div className='orwell-content'>
                 <p>DELVE INTO</p>
