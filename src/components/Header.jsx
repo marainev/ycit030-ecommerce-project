@@ -2,10 +2,10 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <header className="header">
-            <h2>SEA GATO</h2>
+        <header className='header'>
+            <h1>sputnik</h1>
         </header>
-    )
+    );
 };
 
 export default Header;
