@@ -1,4 +1,4 @@
-# YCIT030 Advanced ReactJS Ecommerce Project
+# YCIT030 Ecommerce Project
 
 The Bookstore E-commerce Application is a sample web-based application that allows users to browse and purchase books online. Users can view books, search for specific titles or authors, and view book information. The application provides a shopping cart functionality where users can add books to their cart and adjust quantities. At checkout, users can enter their payment details and simulate a payment process. Upon successful payment, a confetti animation is triggered, indicating a successful transaction.
 
