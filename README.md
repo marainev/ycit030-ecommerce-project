@@ -11,4 +11,4 @@ Installations:
 * canvas-confetti
 
 Contributors:
-> [Luth Gallemaso](https://github.com/panzerwaschbar) & [Maria Gallemaso](https://github.com/marainev)
+> [Luth](https://github.com/panzerwaschbar) & [Maria](https://github.com/marainev)
